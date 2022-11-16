@@ -1,0 +1,124 @@
+{% load static %}
+
+
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kacper Włodarczyk</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="{% static '/css/style.css' %}">
+</head>
+<body>
+
+  <section id="nav-bar" class="container">
+    <header class="nav-bar">
+      <div class="brand"><a href="#hero"><h1>Kacper Włodarczyk</h1></a></div>
+      <div class="nav-list">
+        <div class="hamburger">
+          <div class="bar"></div>
+        </div>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Projects</a></li>
+          <li><a href="#services">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+  </section>
+
+
+  <!-- Hero Section  -->
+  <section id="hero" class="hero container">
+    <div class="hero-info">
+      <h1 class="hero-info-heading">Kim jestem?</h1>
+      <p class="hero-info-subheading">Początkujący i ambitny programista <br> preferuję być szefem kuchni niż kelnerem</p>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+<main>
+  <!-- About section  -->
+  <section id="about" class="about container">
+    <div class="about-info">
+      <h1 class="about-info-heading">O mnie</h1>
+      <p class="about-info-desc">W sierpniu 2022 postanowiłem skończyć z życiem w społeczeństwie i zostać programistą.</p>
+      <p class="about-info-desc">Na obecną chwilę rozwijam się w technologiach takich jak:Python (django), HTML/CSS,GIT</p>
+      <p class="about-info-desc">Poniżej znajdziesz kilka moich dotychczasowych projektów.</p>
+      <p class="about-info-desc">Zapraszam do kontaktu poniżej.</p>
+    </div>
+    <div class="about-img">
+      <div class="about-img-wrapper">
+        <img src="{% static '/images/picture.jpg'%}" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- End About section  -->
+
+  <!-- Service Section  -->
+  <section id="services" class="services container">
+    <div class="services-header">
+      <h1 class="services-header-heading">Projects</h1>
+      <p class="services-header-desc">Wszystkie moje projekty są dostępne na moim <a href="https://github.com/DEENUU1?tab=repositories">GitHubie</a></p>
+    </div>
+    <div class="services-info">
+      <div class="service">
+        <div class="service-card">
+          <div class="service-front">
+            <h1 class="service-front-heading">My own page</h1>
+          </div>
+          <div class="service-back">
+            <h1 class="service-back-heading">My own page</h1>
+            <p class="service-back-desc">Własnie teraz się tu znajdujesz, jest to projekt tworzony z myślą o nauce technologii Django, to właśnie w tym kierunku chciałbym się w tym momencie rozwijać, mam pomysły na kolejne, większe projekty o których niebawem będe mógł pisać na blogu.</p>
+          </div>
+        </div>
+      </div>
+      <div class="service">
+        <div class="service-card">
+          <div class="service-front">
+            <h1 class="service-front-heading">Space Catalog</h1>
+          </div>
+          <div class="service-back">
+            <h1 class="service-back-heading">Space Catalog</h1>
+            <p class="service-back-desc">Projekt ten powstawał między październikiem a listopadem, w wolnych chwilach wciąż go rozwijam. Jest to aplikacja, która ma na celu pokazywać piękno naszego wszechświata, znajdziesz tam chociażby opis Układu Słonecznego, a także codzienną dawkę świeżutkich zdjęć z NASA.</p>
+          </div>
+        </div>
+      </div>
+      <div class="service">
+        <div class="service-card">
+          <div class="service-front">
+            <h1 class="service-front-heading">NASA Apod</h1>
+          </div>
+          <div class="service-back">
+            <h1 class="service-back-heading">NASA Apod</h1>
+            <p class="service-back-desc">Jest to fragment projektu Space Catalog, powstał on jeszcze przed jego powstaniem, jednak postanowiłem go tam zaimplementować ze względu na dodanie kolejnych funkcjonalności.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section  -->
+
+
+  <!-- Footer section  -->
+  <footer id="footer" class="footer container">
+    <div class="footer-contact">
+      <h1 class="footer-contact-heading">Kontakt</h1>
+      <p class="footer-contact-info">Email: kacperwlodarczyk@protonmail.com</p>
+    </div>
+    <div class="footer-social-follow">
+      <h1 class="footer-social-follow-heading">Znajdziesz mnie również na</h1>
+      <div class="footer-social-icon">
+        <a href="https://twitter.com/Kacper95682155"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/DEENUU1"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/kacper-w%C5%82odarczyk-449b62254/"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer section  -->
+  <script src="./app.js"></script>
+</main>
+</body>
+</html>
