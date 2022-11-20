@@ -1,12 +1,7 @@
-<h1>Najnowsze Posty</h1>
+<h1 style="text-align: center">Najnowsze Posty</h1>
 
-<table border="1">
+
 {% for x in mytitle %}
-<tr>
-<td>{{ x.id }}</td>
-<td>{{ x.title }}</td>
-<td>{{ x.content }}</td>
-</tr>
+<h2 style="text-align: center">{{ x.title}}</h2>
+<p style="text-align: center">{{ x.content}}</p>
 {% endfor %}
-</table>
-

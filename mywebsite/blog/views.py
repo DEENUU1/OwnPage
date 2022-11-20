@@ -2,6 +2,9 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
 from .models import Post
+from django.views import generic
+
+
 
 def index(request):
   mytitle = Post.objects.all().values()
