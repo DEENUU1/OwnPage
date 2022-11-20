@@ -1,0 +1,12 @@
+<h1>Najnowsze Posty</h1>
+
+<table border="1">
+{% for x in mytitle %}
+<tr>
+<td>{{ x.id }}</td>
+<td>{{ x.title }}</td>
+<td>{{ x.content }}</td>
+</tr>
+{% endfor %}
+</table>
+
