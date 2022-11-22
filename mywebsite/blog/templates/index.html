@@ -1,7 +1,10 @@
-<h1 style="text-align: center">Najnowsze Posty</h1>
+<h1>Witam na moim blogu</h1>
 
 
-{% for x in mytitle %}
-<h2 style="text-align: center">{{ x.title}}</h2>
-<p style="text-align: center">{{ x.content}}</p>
-{% endfor %}
+{% for post in object_list %}
+<a href="{% url 'article-detail' post.pk %}">{{ post.title }}</a>
+<p>{{ post.author }}</p>
+<p>{{ post.body }}</p>
+
+{% endfor%}
+
