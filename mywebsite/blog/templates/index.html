@@ -10,47 +10,14 @@
 </head>
 <body>
 
-
-  <section id="nav-bar" class="container">
-    <header class="nav-bar">
-      <div class="brand"><a href="#hero"><h1>Blog | Włodarczyk</h1></a></div>
-      <div class="nav-list">
-        <div class="hamburger">
-          <div class="bar"></div>
-        </div>
-        <ul>
-          <li><a href="http://127.0.0.1:8000/blog/">Blog</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-    </header>
-  </section>
-
 {% for post in object_list %}
-<section class="posts">
-<h2> {{ post.title }} </h2>
-<p>{{ post.author }}</p>
-<p>{{ post.body|slice:":150" }}<a href="{% url 'article-detail' post.pk %}"> Czytaj dalej...</a></p>
-</section>
-
-
+  <section class="posts">
+    <h2> {{ post.title }} </h2><br/>
+    <p>{{ post.body|slice:":150" }}<a href="{% url 'article-detail' post.pk %}"> Czytaj dalej...</a></p><br/>
+    <p>autor: {{ post.author }}</p></br>
+  </section>
 {% endfor%}
 
-  <footer id="footer" class="footer container">
-    <div class="footer-contact">
-      <h1 class="footer-contact-heading">Kontakt</h1>
-      <p class="footer-contact-info">Email: kacperwlodarczyk@protonmail.com</p>
-    </div>
-    <div class="footer-social-follow">
-      <h1 class="footer-social-follow-heading">Znajdziesz mnie również na</h1>
-      <div class="footer-social-icon">
-        <a href="https://twitter.com/Kacper95682155"><i class="fab fa-twitter"></i></a>
-        <a href="https://github.com/DEENUU1"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/kacper-w%C5%82odarczyk-449b62254/"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </div>
-  </footer>
-  <!-- End Footer section  -->
-  <script src="{%static '/css/app.js'%}"></script>
+
+</body>
+</html>
