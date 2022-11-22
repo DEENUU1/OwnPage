@@ -4,7 +4,7 @@
 {% for post in object_list %}
 <a href="{% url 'article-detail' post.pk %}">{{ post.title }}</a>
 <p>{{ post.author }}</p>
-<p>{{ post.body }}</p>
+<p>{{ post.body|slice:":200" }}</p>
 
 {% endfor%}
 
