@@ -1,5 +1,9 @@
 <h1>{{ post.title }}</h1>
-<small> By: {{post.author }} </small><br/>
+<small> By: {{post.author }} Date: {{post.create_date}} </small><br/>
 {{ post.body }}
+
+<br>
+<img src="{{post.image.url}}" width="250" height="250"/>
+
 
 <a href="{% url 'index' %}">Powrót</a>

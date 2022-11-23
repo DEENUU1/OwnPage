@@ -7,6 +7,7 @@ class Post(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     body = models.TextField()
     create_date = models.DateTimeField(auto_now_add=True)
+    image = models.ImageField(null=True, blank=True, upload_to="images/")
     def __str__(self):
         return self.title + ' | ' + str(self.author)
 
