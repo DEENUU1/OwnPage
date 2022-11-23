@@ -9,11 +9,29 @@
 </head>
 <body>
 
+
 {% for post in object_list %}
-  <section class="posts">
-    <h2> {{ post.title }} </h2> <small>{{post.create_date}}</small><br/>
-    <p>{{ post.body|slice:":150" }}<a href="{% url 'article-detail' post.pk %}"> Czytaj dalej...</a></p><br/>
-  </section>
+
+<div class="container">
+  <div class="card">
+    <div class="imgBx">
+    <a href="{% url 'article-detail' post.pk %}">
+    <img src="{{post.image.url}}">
+    </a>
+    <h2>{{post.title}} </h2> <small>{{post.create_date}}</small>
+    <p><br>{{post.small_body}}</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!--  <section class="posts">-->
+<!--    <h2> {{ post.title }} </h2> <small>{{post.create_date}}</small><br/>-->
+<!--    <p>{{ post.small_body }}<a href="{% url 'article-detail' post.pk %}"> Czytaj dalej...</a></p><br/>-->
+<!--  </section>-->
 {% endfor%}
 
 
