@@ -14,7 +14,7 @@
   <section class="posts">
     <h2> {{ post.title }} </h2><br/>
     <p>{{ post.body|slice:":150" }}<a href="{% url 'article-detail' post.pk %}"> Czytaj dalej...</a></p><br/>
-    <p>autor: {{ post.author }}</p></br>
+    <p>autor: {{ post.author }} data: {{ post.create_date }}</p></br>
   </section>
 {% endfor%}
 
