@@ -55,7 +55,8 @@ html {
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 600px;
+    width: 60%;
+    min-height: 100vh;
 }
 
 .content-section .card{
@@ -63,10 +64,12 @@ html {
     margin: 40px 20px;
 }
 
-.content-section .card h2{
+.content-section .card h1{
     margin-top: 20px;
-    color: white;
+    color: orange;
     text-shadow: 2px 2px 8px black;
+    font-size: 70px;
+    text-align: center;
 }
 
 .content-section .card small{
@@ -100,6 +103,9 @@ html {
     transition: transform .2s;
     width: 50%;
     height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .content-section .card img:hover{
@@ -107,6 +113,7 @@ html {
     -webkit-transform:
     scale(1.5);
     transform: scale(1.5);
+    text-align:center;
 }
 
 
