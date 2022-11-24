@@ -10,29 +10,31 @@
 <body>
 
 
-{% for post in object_list %}
+
 
 <div class="container">
-  <div class="card">
-    <div class="imgBx">
-    <a href="{% url 'article-detail' post.pk %}">
-    <img src="{{post.image.url}}">
-    </a>
-    <h2>{{post.title}} </h2> <small>{{post.create_date}}</small>
-    <p><br>{{post.small_body}}</p>
+    <div class="row">
+        <div class="heading-section">
+            <h1>BLOG</h1>
+            <p>Witaj na moim blogu, znajdziesz tu moje cotygodniowe
+            raporty z mojej nauki programowania</p>
+        </div>
+
+        <div class="content-section">
+
+            <div class="card">
+                {% for post in object_list %}
+                <h2>{{post.title}}</h2>
+                <small>{{post.create_date}}</small>
+                <p>{{post.body|slice:":150"}} <a href="{% url 'article-detail' post.pk %}"> Czytaj dalej...</a></p>
+                <img src="{{post.image.url}}">
+                {% endfor %}
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 
-
-
-
-<!--  <section class="posts">-->
-<!--    <h2> {{ post.title }} </h2> <small>{{post.create_date}}</small><br/>-->
-<!--    <p>{{ post.small_body }}<a href="{% url 'article-detail' post.pk %}"> Czytaj dalej...</a></p><br/>-->
-<!--  </section>-->
-{% endfor%}
 
 
 </body>

@@ -1,57 +1,84 @@
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-
-body{
-    display:flex;
-    justify-content: center;
-    background: grey;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    background-color: black;
 }
 
 .container{
-    position: relative;
-    width: 1100px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container .row{
+    width: 85%;
+    margin: auto;
+}
+
+.container .row .heading-section{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.container .row .heading-section h1{
+    padding-top: 30px;
+    font-size: 42px;
+    color: orange;
+}
+
+.container .row .heading-section p{
+    padding-top: 15px;
+    color: white;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.content-section{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 30px;
-    margin-top: 8%;
-
+    margin: auto;
+    width: 600px;
 }
 
-.container .card{
-    width: 308px;
-    position: relative;
-    height: 400px;
-    background: #f0f0f0;
-    margin: 30px 10px;
-    padding: 20px 15px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0.5px 10px #e6e6e6;
-    transition: 0.3s ease-in-out;
-    margin-top: 5%;
+.content-section .card{
+    flex: 1;
+    margin: 40px 20px;
+}
 
+.content-section .card h2{
+    margin-top: 20px;
+    color: white;
+}
+
+.content-section .card small{
+    color: grey;
 }
 
 
-.container .card. imgBx{
-    position: relative;
-    width: 260px;
-    height: 260px;
-    top: -60px;
-    left: 20px;
-    box-shadow: 0 5px 20px rgba(0,0,0,1.2);
-}
-
-.container .card. imgBx img{
-    max-width: 100%;
-    border-radius: 10px;
+.content-section .card p{
+    font-size: 15px;
+    margin-top: 10px;
+    color: white;
+    line-height: 1.5;
 
 }
 
+.content-section .card p a{
+    color: red;
+}
+
+.content-section .card img{
+    width: 50%;
+    height: auto;
+}
 
 
+
+@media screen and (max-width: 768px){
+    .content-section{
+        flex-direction: column;
+    }
+}
