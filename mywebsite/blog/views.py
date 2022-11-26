@@ -9,6 +9,7 @@ from django.views.generic import ListView, DetailView
 class HomeView(ListView):
   model = Post
   template_name = 'index.html'
+  ordering = ['-id']
 
 class ArticleDetailView(DetailView):
   model = Post

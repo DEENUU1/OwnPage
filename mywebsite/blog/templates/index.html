@@ -12,7 +12,7 @@
 
   <section id="nav-bar" class="container-nav">
     <header class="nav-bar">
-      <div class="brand"><a href="#hero"><h1>Kacper Włodarczyk</h1></a></div>
+      <div class="brand"><a href="http://127.0.0.1:8000/"><h1>Kacper Włodarczyk</h1></a></div>
       <div class="nav-list">
         <div class="hamburger">
           <div class="bar"></div>
@@ -45,7 +45,7 @@
                     <small>{{post.create_date}}</small>
                     <p>{{post.body|slice:":150"}} <a href="{% url 'article-detail' post.pk %}"> Czytaj cały wpis</a></p>
                     <img src="{{post.image.url}}">
-                    <p>Czas czytania: {{post.time_reading}}</p></br></br></br></br>
+                    <p id="reading-time">Czas czytania: {{post.time_reading}}</p></br></br></br></br>
 
                     {% endfor %}
                 </div>

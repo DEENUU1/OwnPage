@@ -244,7 +244,7 @@ html {
 
 .content-section .card img{
     transition: transform .2s;
-    width: 60%;
+    width: 90%;
     height: auto;
 }
 
@@ -255,6 +255,9 @@ html {
     transform: scale(1.5);
 }
 
+#reading-time{
+    color: #C6C6C6;
+}
 
 
 
