@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #262626;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-family: 'Montserrat';
+}
+
+
+
+/* Main blog content  */
+.container{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container .row{
+    width: 85%;
+    margin: auto;
+}
+
+.container .row .heading-section{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.container .row .heading-section h1{
+    padding-top: 30px;
+    font-size: 60px;
+    color: orange;
+    text-shadow: 2px 2px 8px black;
+}
+
+.container .row .heading-section p{
+    padding-top: 15px;
+    color: white;
+    font-size: 20px;
+    line-height: 1.5;
+    text-shadow: 2px 2px 8px black;
+}
+
+.content-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 60%;
+    min-height: 100vh;
+}
+
+.content-section .card{
+    flex: 1;
+    margin: 40px 20px;
+}
+
+.content-section .card h1{
+    margin-top: 20px;
+    color: orange;
+    text-shadow: 2px 2px 8px black;
+    font-size: 70px;
+    text-align: center;
+}
+
+.content-section .card small{
+    color: grey;
+}
+
+
+.content-section .card p{
+    font-size: 15px;
+    margin-top: 10px;
+    color: white;
+    line-height: 1.5;
+
+}
+
+.content-section .card a:link, a:visited{
+    color: #FF8300;
+    padding: 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.content-section .card span a:hover, a:active{
+    color: #B65D00;
+}
+
+
+.content-section .card img{
+    transition: transform .2s;
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-section .card img:hover{
+    -ms-transform: scale(1.5);
+    -webkit-transform:
+    scale(1.5);
+    transform: scale(1.5);
+    text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+/* Footer section  */
+.footer {
+    font-size: 10px;
+	min-height: 20vh;
+	width: 100%;
+	background-color: black;
+	color: white;
+	flex-direction: column;
+	text-align: center;
+	padding: 5rem;
+}
+.footer .footer-contact {
+	padding: 20px;
+}
+.footer .footer-contact .footer-contact-heading {
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+	font-size: 25px;
+}
+.footer .footer-contact .footer-contact-info {
+	font-size: 1.4rem;
+	padding-top: 10px;
+	letter-spacing: .2rem;
+	font-size: 15px;
+}
+.footer .footer-social-follow .footer-social-icon a {
+	color: white;
+	font-size: 2rem;
+	margin: .4rem;
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+    .content-section{
+        flex-direction: column;
+    }
+}

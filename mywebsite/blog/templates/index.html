@@ -1,10 +1,77 @@
-<h1>Witam na moim blogu</h1>
+{% load static %}
+
+<html lang="pl-PL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Kacper Włodarczyk</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="{% static '/css/blogstyle.css' %}">
+</head>
+<body>
+
+  <section id="nav-bar" class="container-nav">
+    <header class="nav-bar">
+      <div class="brand"><a href="#hero"><h1>Kacper Włodarczyk</h1></a></div>
+      <div class="nav-list">
+        <div class="hamburger">
+          <div class="bar"></div>
+        </div>
+        <ul>
+          <li><a href="http://127.0.0.1:8000/blog/">Blog</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+  </section>
 
 
-{% for post in object_list %}
-<a href="{% url 'article-detail' post.pk %}">{{ post.title }}</a>
-<p>{{ post.author }}</p>
-<p>{{ post.body }}</p>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="heading-section">
+                <h1>BLOG</h1>
+                <p>Witaj na moim blogu, znajdziesz tu moje cotygodniowe
+                raporty z mojej nauki programowania</p>
+            </div>
 
-{% endfor%}
 
+            <div class="content-section">
+
+                <div class="card">
+                    {% for post in object_list %}
+                    <h2>{{post.title}}</h2>
+                    <small>{{post.create_date}}</small>
+                    <p>{{post.body|slice:":150"}} <a href="{% url 'article-detail' post.pk %}"> Czytaj cały wpis</a></p>
+                    <img src="{{post.image.url}}">
+                    <p>Czas czytania: {{post.time_reading}}</p></br></br></br></br>
+
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+  <footer id="footer" class="footer container">
+    <div class="footer-contact">
+      <h1 class="footer-contact-heading">Kontakt</h1>
+      <p class="footer-contact-info">Email: kacperwlodarczyk@protonmail.com</p>
+    </div>
+    <div class="footer-social-follow">
+      <h1 class="footer-social-follow-heading">Znajdziesz mnie również na</h1>
+      <div class="footer-social-icon">
+        <a href="https://twitter.com/Kacper95682155"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/DEENUU1"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/kacper-w%C5%82odarczyk-449b62254/"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{%static '/css/app.js'%}"></script>
+</main>
+</body>
+</html>
