@@ -50,6 +50,7 @@ html {
 	font-family: 'Flash Back - Demo', sans-serif;
 	font-size: 3rem;
 	color: white;
+	text-decoration:none;
 }
 .nav-bar .nav-list {
 	display: flex;
@@ -229,23 +230,27 @@ html {
 }
 
 .content-section .card a:link, a:visited{
-    color: #FF8300;
-    padding: 0px 0px;
+    background-color: #FF8700;
+    color: white;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 2px 2px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 12px;
+    font-size: 15px
 }
 
-.content-section .card span a:hover, a:active{
-    color: #B65D00;
+.content-section .card a:hover, a:active{
+    background-color: #FF4D00;
 }
 
 
 .content-section .card img{
     transition: transform .2s;
-    width: 90%;
-    height: auto;
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
 }
 
 .content-section .card img:hover{

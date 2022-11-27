@@ -50,6 +50,7 @@ html {
 	font-family: 'Flash Back - Demo', sans-serif;
 	font-size: 3rem;
 	color: white;
+	text-decoration:none;
 }
 .nav-bar .nav-list {
 	display: flex;

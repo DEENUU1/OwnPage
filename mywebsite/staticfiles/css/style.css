@@ -39,6 +39,7 @@ html {
 	font-family: 'Flash Back - Demo', sans-serif;
 	font-size: 3rem;
 	color: white;
+	text-decoration:none;
 }
 .nav-bar .nav-list {
 	display: flex;
@@ -167,7 +168,7 @@ html {
 	text-transform: uppercase;
 	letter-spacing: .5rem;
 	color: white;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 2px 2px 4px black;
 }
 
 
@@ -189,7 +190,7 @@ main {
 	font-size: 4rem;
 	text-transform: uppercase;
 	letter-spacing: .3rem;
-	color: white;
+	color: orange;
 }
 .about .about-info .about-info-desc {
 	font-size: 1.3rem;
@@ -252,7 +253,7 @@ main {
 	font-size: 4rem;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	color: white;
+	color: orange;
 }
 .services .services-header .services-header-desc {
 	font-size: 1.3rem;
@@ -260,6 +261,22 @@ main {
 	margin-top: 20px;
 	color: white;
 }
+
+.services .services-header .services-header-desc a:link, a:visited{
+    color: orange;
+    padding: 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
+
+
+.services .services-header .services-header-desc a:hover, a:active{
+    color: #FF4D00;
+}
+
+
 .services .services-info {
 	margin-top: 30px;
 	display: flex;
