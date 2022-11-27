@@ -186,13 +186,12 @@ html {
     color: orange;
     text-shadow: 2px 2px 8px black;
     font-size: 70px;
-    text-align: center;
+    text-align: justify;
 }
 
 .content-section .card h2{
     margin-top: 20px;
     color: white;
-    text-shadow: 2px 2px 8px black;
     font-size: 45px;
     text-align: center;
 }
@@ -210,14 +209,14 @@ html {
 .content-section .card ol li{
     color: white;
     font-size: 15px;
-    text-align: center;
+    text-align: justify;
     list-style-position: inside;
 }
 
 .content-section .card ul li{
     color: white;
     font-size: 15px;
-    text-align: center;
+    text-align: justify;
     list-style-position: inside;
 }
 
@@ -233,7 +232,7 @@ html {
     margin-top: 10px;
     color: white;
     line-height: 1.5;
-    text-align: center;
+    text-align: justify;
 
 }
 
@@ -243,10 +242,10 @@ html {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 12px;
+    font-size: 15px;
 }
 
-.content-section .card span a:hover, a:active{
+.content-section .card a:hover, a:active{
     color: #B65D00;
 }
 
