@@ -15,7 +15,6 @@ class Post(models.Model):
     time_reading = models.TextField()
 
 
-
     def __str__(self):
         return self.title + ' | ' + str(self.author)
 
