@@ -55,7 +55,7 @@ TINYMCE_DEFAULT_CONFIG = {
     "fullscreen  preview save print | insertfile image media pageembed template link anchor codesample | "
     "a11ycheck ltr rtl | showcomments addcomment code",
     "custom_undo_redo_levels": 10,
-    "language": "pl_PL",  # To force a specific language instead of the Django current language.
+    "language": "pl_PL",
 }
 
 
