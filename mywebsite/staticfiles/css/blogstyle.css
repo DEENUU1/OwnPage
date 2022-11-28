@@ -153,14 +153,6 @@ html {
 
 
 
-
-
-
-
-
-
-
-
 /* Main blog content  */
 .container{
     width: 100%;
@@ -269,10 +261,6 @@ html {
 
 
 
-
-
-
-
 /* Footer section  */
 .footer {
     font-size: 10px;
@@ -338,48 +326,6 @@ html {
 	}
 	.nav-bar .nav-list ul li {
 		display: inline-block;
-	}
-	.hero {
-		height: 100vh;
-		flex-direction: row;
-		padding-left: 10%;
-		justify-content: center;
-		align-items: center;
-	}
-	.hero .hero-info {
-		max-width: 30%;
-		text-align: left;
-	}
-	.hero .hero-info .hero-info-subheading {
-		font-size: 1.3rem;
-	}
-	.hero .hero-img {
-		min-width: 400px;
-		max-width: 1000px;
-	}
-	.about {
-		width: 80%;
-		margin: 0 auto;
-		flex-direction: row;
-	}
-	.about .about-info {
-		width: 50%;
-		text-align: left;
-		padding-right: 17rem;
-	}
-	.services .services-header .services-header-desc {
-		max-width: 500px;
-		padding-top: 20px;
-		margin: 0 auto;
-	}
-	.services .services-info {
-		flex-direction: row;
-		width: 80%;
-		color: white;
-	}
-	.services .services-info .service {
-		margin: 0;
-		color: white;
 	}
 
 }
