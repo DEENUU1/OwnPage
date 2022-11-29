@@ -16,6 +16,7 @@ class ArticleDetailView(DetailView):
   template_name = 'article_details.html'
 
 
+
 # def index(request):
 #   mytitle = Post.objects.all().values()
 #   template = loader.get_template('index.html')

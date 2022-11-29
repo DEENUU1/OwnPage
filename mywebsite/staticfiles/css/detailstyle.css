@@ -213,6 +213,12 @@ html {
     list-style-position: inside;
 }
 
+.content-section table {
+    color: white;
+    font-size: 15px;
+    text-align: justify;
+    list-style-position: inside;
+}
 
 .content-section .card small{
     color: grey;

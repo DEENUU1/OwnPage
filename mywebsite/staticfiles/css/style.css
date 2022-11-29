@@ -299,7 +299,10 @@ main {
 	transform-style: preserve-3d;
 	transition: .3s ease transform;
 	display: block;
+	
 }
+
+
 .services .services-info .service .service-card .service-front,
 .services .services-info .service .service-card .service-back {
 	position: absolute;
