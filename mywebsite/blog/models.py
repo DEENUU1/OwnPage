@@ -18,3 +18,19 @@ class Post(models.Model):
         return self.title + ' | ' + str(self.author)
 
 
+
+class Comments(models.Model):
+    post = models.ForeignKey(Post,on_delete=models.CASCADE,related_name='comments')
+    name = models.CharField(max_length=80)
+    title = models.CharField(max_length=80)
+    body = models.TextField()
+    email = models.EmailField()
+    create_date = models.DateTimeField(auto_now_add=True)
+    active = models.BooleanField(default=False)
+
+
+    class Meta:
+        ordering = ['create_date']
+
+    def __str__(self):
+        return 'Komentarz {} napisany przez {}'.format(self.body, self.name)
