@@ -10,6 +10,9 @@ html {
 	font-family: 'Montserrat';
 	scroll-behavior: smooth;
 }
+
+
+
 .container {
 	width: 100%;
 	height: auto;
@@ -41,6 +44,7 @@ html {
 	color: white;
 	text-decoration:none;
 }
+
 .nav-bar .nav-list {
 	display: flex;
 	align-items: center;
@@ -158,11 +162,34 @@ html {
 	text-align: center;
 }
 .hero .hero-info .hero-info-heading {
-	font-size: 5rem;
+	font-size: 80px;
 	font-weight: 500;
 	color: whitesmoke;
 	text-shadow: 2px 2px 4px #000000;
 }
+
+
+
+.hero .hero-info .contact-button a:link, a:visited {
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+.hero .hero-info .contact-button a:hover, a:active {
+    background-color: grey;
+    color: white;
+
+}
+
+
+
+
 .hero .hero-info .hero-info-subheading {
 	font-size: 1.6rem;
 	text-transform: uppercase;
@@ -177,27 +204,47 @@ main {
     background-color: #262626;
 }
 /* About Section  */
+
+
+
 .about {
-	width: 100%;
 	min-height: 50vh;
 	padding: 10rem 5rem;
 	flex-direction: column;
 }
 .about .about-info {
+    width: 100%;
 	text-align: center;
 }
+
+
 .about .about-info .about-info-heading {
-	font-size: 4rem;
-	text-transform: uppercase;
-	letter-spacing: .3rem;
-	color: orange;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    color: white;
+    margin-top: 10px;
+
+
 }
+
+
 .about .about-info .about-info-desc {
-	font-size: 1.3rem;
+	font-size: 20px;
 	line-height: 2rem;
 	margin-top: 10px;
 	color: white;
 }
+
+.about .about-info .about-tech-info {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    color: white;
+    margin-top: 10px;
+
+}
+
 .about .about-info .about-info-button {
 	padding: 1.6rem 2.6rem;
 	display: inline-block;
@@ -263,7 +310,7 @@ main {
 }
 
 .services .services-header .services-header-desc a:link, a:visited{
-    color: orange;
+    color: white;
     padding: 0px 0px;
     text-align: center;
     text-decoration: none;
@@ -361,6 +408,70 @@ main {
 /* End Services section  */
 
 
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  line-height: 22px;
+  background-color: transparent;
+  border:5px solid black;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:6px solid black; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+.contact {
+	flex-direction: column;
+	min-height: 60vh;
+	color: white;
+}
+
+.contact-info {
+	width: 100%;
+	text-align: center;
+}
+
+.contact-info-heading {
+	font-size: 4rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: orange;
+
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:black;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:grey; }
+
+
+
 /* Footer section  */
 .footer {
 	min-height: 20vh;
@@ -422,6 +533,8 @@ main {
 		max-width: 30%;
 		text-align: left;
 	}
+
+
 	.hero .hero-info .hero-info-subheading {
 		font-size: 1.3rem;
 	}
@@ -460,7 +573,7 @@ main {
 /* Media Query For Desktop Only  */
 @media only screen and (min-width: 1200px) {
 	.hero .hero-info .hero-info-heading {
-		font-size: 6rem;
+		font-size:80px;
 	}
 }
 /* End Media Query For Desktop Only  */

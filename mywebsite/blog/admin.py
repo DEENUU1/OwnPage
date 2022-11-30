@@ -5,6 +5,9 @@ from .models import *
 
 
 
+admin.site.register(Post)
+admin.site.register(Comments)
+
 # class PostAdmin(admin.ModelAdmin):
 #     list_display = ('title, date, author, content')
 
@@ -14,7 +17,7 @@ class PostAdmin(admin.ModelAdmin):
         models.TextField: {'widget':TinyMCE()},
     }
 
-admin.site.register(Post)
+
 
 class CommentAdmin(admin.ModelAdmin):
     list_display = ('name', 'title', 'body', 'post', 'active')
