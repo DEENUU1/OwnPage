@@ -8,7 +8,7 @@
 }
 
 main {
-    background-color: #262626;
+    background-color: #1b1d1e;
 }
 
 html {
@@ -33,10 +33,10 @@ html {
 	width: 100%;
 	position: fixed;
 	z-index: 100;
-	background-color: black;
+	background-color: #181a1b;
 }
 .nav-bar {
-    background-color: black;
+    background-color: #181a1b;
 	left: 0;
 	top: 0;
 	padding: 1rem 5rem;
@@ -44,7 +44,6 @@ html {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-
 }
 .nav-bar .brand a {
 	font-family: 'Flash Back - Demo', sans-serif;
@@ -52,6 +51,7 @@ html {
 	color: white;
 	text-decoration:none;
 }
+
 .nav-bar .nav-list {
 	display: flex;
 	align-items: center;
@@ -263,10 +263,9 @@ html {
 
 /* Footer section  */
 .footer {
-    font-size: 10px;
 	min-height: 20vh;
 	width: 100%;
-	background-color: black;
+	background-color: #181a1b;
 	color: white;
 	flex-direction: column;
 	text-align: center;
@@ -280,21 +279,18 @@ html {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	margin-bottom: 10px;
-	font-size: 25px;
 }
 .footer .footer-contact .footer-contact-info {
 	font-size: 1.4rem;
 	padding-top: 10px;
 	letter-spacing: .2rem;
-	font-size: 15px;
 }
 .footer .footer-social-follow .footer-social-icon a {
 	color: white;
-	font-size: 2rem;
+	font-size: 3rem;
 	margin: .4rem;
 	display: inline-block;
 }
-
 
 
 
