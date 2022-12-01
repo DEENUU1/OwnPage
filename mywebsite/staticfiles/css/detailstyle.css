@@ -316,13 +316,9 @@ html {
 @media screen and (max-width: 768px){
     .content-section{
         flex-direction: column;
+        width: auto;
     }
 }
-
-
-
-
-
 
 
 /* Media query for desktop and tab  */
@@ -352,4 +348,15 @@ html {
 		font-size: 6rem;
 	}
 }
+
+@media only screen and (max-width: 768px) {
+    html,
+    body{
+    width:100%;
+    overflow-x:hidden;
+    }
+}
+
+
+
 /* End Media Query For Desktop Only  */
