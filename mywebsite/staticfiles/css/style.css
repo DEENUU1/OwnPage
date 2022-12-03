@@ -226,12 +226,12 @@ main {
 }
 
 
-.about .about-info .about-info-desc {
+.about .about-info-desc {
 	font-size: 20px;
 	line-height: 2rem;
 	margin-top: 10px;
 	color: white;
-	text-align:center;
+
 }
 
 .about .about-info .about-info-desc a{
@@ -262,12 +262,11 @@ main {
 }
 
 
-.projects .projects-info .projects-info-desc {
+.projects .projects-info-desc {
 	font-size: 20px;
 	line-height: 2rem;
 	margin-top: 10px;
 	color: white;
-	text-align:center;
 }
 
 .containerp {
@@ -329,6 +328,7 @@ main {
     font-size: 18px;
     line-height: 1.7;
     color: white;
+    max-width: 100%;
 
 }
 
@@ -388,7 +388,8 @@ a.read_more:hover {
     }
 
     .card {
-        padding: 15px;
+        max-width: 100%;
+
     }
 
     .card_body {
@@ -411,6 +412,7 @@ a.read_more:hover {
         margin-top: 30px;
     }
 
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -419,11 +421,12 @@ a.read_more:hover {
         grid-template-columns: 1fr;
         gap: 2%;
     }
+
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 200px) {
     .container {
-        max-width: 90%;
+        max-width: 100%;
     }
 
     .card {
@@ -505,7 +508,6 @@ textarea {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 100%;
   background:black;
-  border-radius:5px;
   border:0;
   cursor:pointer;
   color:white;
@@ -557,6 +559,7 @@ textarea {
     width:100%;
     overflow-x:hidden;
     }
+
 }
 /* Media query for desktop and tab  */
 @media only screen and (min-width: 768px) {
@@ -588,14 +591,6 @@ textarea {
 		text-align: left;
 	}
 
-
-	.hero .hero-info .hero-info-subheading {
-		font-size: 1.3rem;
-	}
-	.hero .hero-img {
-		min-width: 400px;
-		max-width: 1000px;
-	}
 	.about {
 		width: 100%;
 		margin: 0 auto;
@@ -606,7 +601,9 @@ textarea {
 		text-align: center;
 	}
 
+
 }
+
 /* End Media query for desktop and tab  */
 
 /* Media Query For Desktop Only  */

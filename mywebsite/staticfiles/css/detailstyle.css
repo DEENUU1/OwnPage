@@ -160,11 +160,12 @@ html {
     padding-top: 100px;
 }
 
+
 .content-section{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin:auto;
     width: 60%;
     min-height: 100vh;
 }
@@ -172,6 +173,7 @@ html {
 .content-section .card{
     flex: 1;
     margin: 40px 20px;
+    max-width: 100%;
 }
 
 .content-section .card h1{
@@ -179,7 +181,7 @@ html {
     color: orange;
     text-shadow: 2px 2px 8px black;
     font-size: 70px;
-    text-align: justify;
+    /*text-align: justify;*/
 }
 
 .content-section .card h2{
@@ -232,6 +234,7 @@ html {
     color: white;
     line-height: 1.5;
     text-align: justify;
+    width: 100%;
 
 }
 
@@ -316,7 +319,7 @@ html {
 @media screen and (max-width: 768px){
     .content-section{
         flex-direction: column;
-        width: auto;
+        width:400px;
     }
 }
 
@@ -327,7 +330,7 @@ html {
 		display: none;
 	}
 	.nav-bar {
-		width: 80%;
+		width: 100%;
 	}
 	.nav-bar .nav-list ul {
 		transform: translateX(0);

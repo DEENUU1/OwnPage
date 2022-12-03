@@ -195,13 +195,14 @@ html {
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 500px;
+    width: 400px;
 
 }
 
 .content-section .card{
     flex: 1;
     margin: 40px 20px;
+    max-width: 100%;
 }
 
 .content-section .card h2{
@@ -222,7 +223,7 @@ html {
     margin-top: 10px;
     color: white;
     line-height: 1.5;
-    justify-content: center;
+    /*justify-content: center;*/
 
 }
 
@@ -303,9 +304,14 @@ html {
 
 @media only screen and (max-width: 300px) {
     .content-section{
-        flex-direction: column;
-        width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 400px;
+
     }
+
 }
 
 
@@ -315,7 +321,7 @@ html {
 		display: none;
 	}
 	.nav-bar {
-		width: 80%;
+		width: 100%;
 	}
 	.nav-bar .nav-list ul {
 		transform: translateX(0);

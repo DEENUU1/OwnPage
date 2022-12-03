@@ -23,7 +23,7 @@
           <div class="bar"></div>
         </div>
         <ul>
-          <li><a href="http://127.0.0.1:8000/blog/">Blog</a></li>
+          <li><a href="/blog/">Blog</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -48,18 +48,20 @@
   <section id="about" class="about container">
     <div class="about-info">
       <h1 class="about-info-heading">About me</h1>
+    </div>
       <p class="about-info-desc">I am software engineer. For seriously I started learning programming in august 2022. <br> Right now I know: Python, Django, HTML/CSS, SQLlite <br> This website is my first Django project, under this section you can see my other projects. <br> I also invite you to visit my <a href="/blog/">blog</a> (made with Django)</p>
 
-    </div>
+
   </section>
   <!-- End About section  -->
 
   <section id="projects" class="projects container">
     <div class="projects-info">
       <h1 class="projects-info-heading">Projects</h1>
+    </div>
       <p class="projects-info-desc">In this section I would like to represent you my portfolio</p>
       <p class="projects-info-desc">All of this projects are open soft and are avaiable on GitHub</p>
-    </div>
+
 
       <div class="containerp">
         <div class="grid">
@@ -148,11 +150,11 @@
       <h1 class="contact-info-heading">Contact</h1>
     </div>
 
-  <form action="" method="post">
+  <form action="/contact-form/" method="post">
       {% csrf_token %}
           <input name="email" type="text" class="feedback-input" placeholder="E-mail" />
           <input name="subject" type="text" class="feedback-input" placeholder="Subject" />
-          <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
+          <textarea  name="text" class="feedback-input" placeholder="Message"></textarea>
           <input type="submit" value="SUBMIT"/>
   </form>
 

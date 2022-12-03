@@ -9,7 +9,7 @@ def home(request):
 def contact_view(request):
     form = ContactForm()
     context = {'form': form}
-    return HttpResponse(request, 'base/templates/base/index.html', context)
+    return HttpResponse(request, 'base/templates/base/contact.html', context)
 
 
 
