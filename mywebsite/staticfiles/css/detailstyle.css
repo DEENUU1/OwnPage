@@ -17,7 +17,13 @@ html {
 	font-size: 10px;
 }
 
-
+.container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 /* Nav Bar  */
 
 .container-nav {
@@ -155,9 +161,11 @@ html {
 
 /* Main blog content  */
 .content-section{
-    width: 100%;
     min-height: 100vh;
     padding-top: 100px;
+    text-align: center;
+    margin: auto;
+    max-width: 100%;
 }
 
 
@@ -165,15 +173,14 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:auto;
-    width: 60%;
-    min-height: 100vh;
+    width: 1000px;
+    text-align:center;
+    margin: auto;
 }
 
 .content-section .card{
-    flex: 1;
-    margin: 40px 20px;
     max-width: 100%;
+    margin: 40px 20px;
 }
 
 .content-section .card h1{
@@ -262,10 +269,10 @@ html {
 }
 
 .content-section .card img:hover{
-    -ms-transform: scale(1.5);
+    -ms-transform: scale(3);
     -webkit-transform:
-    scale(1.5);
-    transform: scale(1.5);
+    scale(3);
+    transform: scale(3);
     text-align:center;
 }
 
@@ -316,10 +323,13 @@ html {
 
 
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px){
     .content-section{
-        flex-direction: column;
-        width:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    min-height: 100vh;
     }
 }
 

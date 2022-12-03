@@ -21,6 +21,15 @@ html {
 
 }
 
+
+.container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 /* Nav Bar  */
 
 .container-nav {
@@ -87,7 +96,7 @@ html {
 }
 .nav-bar .nav-list .hamburger .bar {
 	height: 2px;
-	width: 100px;
+	width: 30px;
 	background-color: white;
 	position: relative;
 	display: flex;
@@ -158,7 +167,7 @@ html {
 
 /* Main blog content  */
 .container{
-    width: 100%;
+    max-width: 100%;
     min-height: 100vh;
     padding-top: 100px;
 
@@ -195,14 +204,16 @@ html {
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 400px;
+    width: 100%;
+    text-align: center;
+
 
 }
 
 .content-section .card{
     flex: 1;
     margin: 40px 20px;
-    max-width: 100%;
+    max-width: 400;
 }
 
 .content-section .card h2{
@@ -226,6 +237,10 @@ html {
     /*justify-content: center;*/
 
 }
+
+
+
+
 
 .content-section .card a:link, a:visited{
     background-color: #FF8700;
@@ -300,21 +315,6 @@ html {
 
 
 
-
-
-@media only screen and (max-width: 300px) {
-    .content-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 400px;
-
-    }
-
-}
-
-
 /* Media query for desktop and tab  */
 @media only screen and (min-width: 768px) {
 	.nav-bar .nav-list .hamburger {
@@ -334,6 +334,7 @@ html {
 		display: inline-block;
 	}
 
+
 }
 /* End Media query for desktop and tab  */
 
@@ -349,6 +350,82 @@ html {
     body{
     width:100%;
     overflow-x:hidden;
+    }
+
+}
+
+
+@media only screen and (max-width: 1441px) and (min-width: 1025px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .grid {
+        gap: 2%;
+    }
+
+    .card {
+        max-width: 100%;
+
+    }
+
+    .card_body {
+        padding: 15px;
+    }
+
+    .card_title {
+        font-size: 22px;
+        padding-bottom: 14px;
+    }
+
+    .card_body p {
+        font-size: 16px;
+    }
+
+    a.read_more {
+        padding: 19px 0;
+        width: 60%;
+        font-size: 11px;
+        margin-top: 30px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2%;
+    }
+
+}
+
+@media only screen and (max-width: 200px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .card {
+        padding: 20px 10px;
+    }
+
+    .card_body {
+        padding: 7px;
+    }
+
+    .card_title {
+        font-size: 20px;
+        padding-bottom: 7px;
+    }
+
+    .card_body p {
+        font-size: 14px;
+    }
+
+    a.read_more {
+        padding: 15px 0;
+        margin-top: 20px;
     }
 
 }
