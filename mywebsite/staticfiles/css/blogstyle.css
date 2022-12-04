@@ -21,6 +21,27 @@ html {
 
 }
 
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #ffffff #000000;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #000000;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border: 3px none #ffffff;
+  }
+
 
 .container {
 	width: 100%;
@@ -31,14 +52,6 @@ html {
 }
 
 /* Nav Bar  */
-
-.container-nav {
-	width: 100%;
-	height: auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
 
 #nav-bar {
 	height: auto;
@@ -57,12 +70,15 @@ html {
 	align-items: center;
 	justify-content: space-between;
 }
+
 .nav-bar .brand a {
-	font-family: 'Flash Back - Demo', sans-serif;
-	font-size: 3rem;
-	color: white;
-	text-decoration:none;
+    font-family: 'Flash Back - Demo', sans-serif;
+    font-size: 3rem;
+    text-decoration:none;
+    color: white;
+
 }
+
 
 .nav-bar .nav-list {
 	display: flex;
@@ -205,7 +221,7 @@ html {
     align-items: center;
     margin: auto;
     width: 100%;
-    text-align: center;
+
 
 
 }
@@ -310,6 +326,12 @@ html {
 	font-size: 3rem;
 	margin: .4rem;
 	display: inline-block;
+	flex-direction: column;
+}
+
+.footer .footer-social-follow .footer-social-icon a:hover {
+    color: orange;
+
 }
 
 
