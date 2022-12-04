@@ -11,7 +11,26 @@ html {
 	scroll-behavior: smooth;
 }
 
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #ffffff #000000;
+  }
 
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #000000;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border: 3px none #ffffff;
+  }
 
 .container {
 	width: 100%;
@@ -38,12 +57,17 @@ html {
 	align-items: center;
 	justify-content: space-between;
 }
+
 .nav-bar .brand a {
-	font-family: 'Flash Back - Demo', sans-serif;
-	font-size: 3rem;
-	color: white;
-	text-decoration:none;
+    font-family: 'Flash Back - Demo', sans-serif;
+    font-size: 3rem;
+    text-decoration:none;
+    color: white;
+
 }
+
+
+
 
 .nav-bar .nav-list {
 	display: flex;
@@ -169,7 +193,6 @@ html {
 }
 
 
-
 .hero .hero-info .contact-button a:link, a:visited {
     background-color: black;
     color: white;
@@ -214,31 +237,83 @@ main {
 .about .about-info {
     width: 100%;
 	text-align: center;
+	margin-top: 50px;
 }
-
 
 .about .about-info .about-info-heading {
     font-size: 4rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: orange;
+    color: #FF7825;
 
 }
 
 
-.about .about-info-desc {
-	font-size: 20px;
-	line-height: 2rem;
-	margin-top: 10px;
-	color: white;
+.row {
+    width: 80%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.row .left{
+    overflow: hidden;
 
 }
 
-.about .about-info .about-info-desc a{
-    text-decoration: none;
+.row .left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row .right{
+    display: flex;
+    align-items: center;
+}
+
+.row .right .content{
+    padding-left: 20px;
+}
+
+.row .right .content p{
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     color: white;
-    font-style: italic;
+    line-height: 3rem;
 }
+
+.row .right .content ul li{
+    font-size: 20px;
+    line-height: 3rem;
+    color: white;
+    list-style-position: inside;
+}
+
+@media (max-width: 991px) {
+    .row .right .content{
+        padding-left: 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .row {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
 
 /* End About Section  */
 
@@ -257,20 +332,20 @@ main {
     font-size: 4rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: orange;
+    color: #FF7825;
+    margin-bottom: 30px;
 
 }
 
 
 .projects .projects-info-desc {
 	font-size: 20px;
-	line-height: 2rem;
-	margin-top: 10px;
+	line-height: 3rem;
 	color: white;
 }
 
 .containerp {
-    max-width: 70%;
+    max-width: 90%;
     margin: 0 auto;
     height: 100%;
 }
@@ -295,7 +370,6 @@ main {
 .card_img img {
     transition: transform .2s;
     width: 100%;
-    height: auto;
     /*border-radius: 20px;*/
 }
 
@@ -332,9 +406,26 @@ main {
 
 }
 
+.card_body h6 {
+    font-family: 'Merriweather',
+        serif;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: white;
+    text-align: justify;
+    font-size: 21px;
+}
 
+.card_body ul li{
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    text-align: justify;
+    list-style-position: inside;
 
-a.read_more {
+}
+
+.card_body a.read_more {
     color: #FFF;
     font-size: 13px;
     text-decoration: none;
@@ -347,7 +438,7 @@ a.read_more {
     transition: all .3s ease-in-out;
 }
 
-a.read_more:hover {
+.card_body a.read_more:hover {
     box-shadow: 0px 1px 50px rgba(0, 0, 0, 0.15);
     background: #404040;
 }
@@ -500,7 +591,8 @@ textarea {
 	font-size: 4rem;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	color: orange;
+	color: #FF7825;
+	margin-bottom: 30px;
 
 }
 
@@ -551,6 +643,12 @@ textarea {
 	font-size: 3rem;
 	margin: .4rem;
 	display: inline-block;
+	flex-direction: column;
+}
+
+.footer .footer-social-follow .footer-social-icon a:hover {
+    color: orange;
+
 }
 /* End Footer section  */
 @media only screen and (max-width: 768px) {
