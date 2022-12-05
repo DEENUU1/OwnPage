@@ -332,7 +332,7 @@ html {
     font-weight: 400;
     text-align: center;
     margin-top: 10px;
-    width: 30em;
+    max-width: 30em;
     margin: 0 auto;
 }
 
