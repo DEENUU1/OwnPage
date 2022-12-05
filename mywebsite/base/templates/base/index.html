@@ -1,18 +1,20 @@
 {% load static %}
 
-
-
-
 <html lang="pl-PL">
 
 <head>
   <meta charset="UTF-8">
+  <meta name="keywords" content="Kacper Włodarczyk, Kacper, Włodarczyk, Programming, Python, Programowanie, HTML5, HTML, CSS, portfolio,Blog, Moje życie, Moje, Życie, My life, My, Life">
+  <meta name="description" content="Kacper Włodarczyk personal portfolio, projects, and blog. I created Space Catalog and Nasa Apod. Kacper Włodarczyk, moja osobity strona internetowa, zawiera moje projekty oraz personalego bloga. Stworzyłem Space Catalog oraz Nasa Apod.">
+  <meta name="author" content="Kacper Włodarczyk">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kacper Włodarczyk</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
   <link rel="stylesheet" href="{% static '/css/style.css' %}">
 </head>
 <body>
+
+<!--NAVIGATION BAR-->
 
 <div class="navigation-bar">
   <section id="nav-bar" class="container">
@@ -32,20 +34,30 @@
     </header>
   </section>
 </div>
-  <!-- Hero Section  -->
+
+<!--END OF NAVIGATION BAR-->
+
+
+<!--FIRST SECTION-->
+
   <section id="hero" class="hero container">
     <div class="hero-info">
       <h1 class="hero-info-heading">Hi, I'm Kacper</h1>
-        <p class="hero-info-quote">If i don't know something I'm trying to learn about it.</p>
+        <p class="hero-info-quote">If I don't know something I'm trying to learn about it.</p>
         <div class="contact-button">
           <a href="#contact">Contact me</a>
         </div>
-<!--      <p class="hero-info-subheading">Backend developer</p>-->
     </div>
   </section>
-  <!-- End Hero Section  -->
+
+<!--END OF FIRST SECTION-->
+
 <main>
-  <!-- About section  -->
+
+
+
+<!--ABOUT ME SECTION-->
+
  <section id="about" class="about container">
     <div class="about-info">
       <h1 class="about-info-heading">About me</h1>
@@ -71,93 +83,103 @@
             </div>
         </div>
     </div>
-
   </section>
-  <!-- End About section  -->
+
+<!--END OF ABOUT SECTION-->
+
+
+<!--PROJECT SECTION-->
 
   <section id="projects" class="projects container">
     <div class="projects-info">
       <h1 class="projects-info-heading">Projects</h1>
     </div>
-      <p class="projects-info-desc">In this section I would like to represent you my portfolio</p>
-      <p class="projects-info-desc">All of this projects are open soft and are avaiable on GitHub</p>
 
-
-      <div class="containerp">
-        <div class="grid">
-            <div class="card">
-                <div class="card_img">
-                    <img src="/staticfiles/images/projectweb.gif" alt="project-1">
-                </div>
-                <div class="card_body">
-                    <h2 class="card_title">Portfolio and blog web page</h2>
-                    <p>My first web project. Here you can see my portfolio and read my blog.</p>
-                    <h6>Technologies:</h6>
-                    <ul>
-                        <li>Python</li>
-                        <li>Django</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>SQLite</li>
-                    </ul>
-                    <a href="#" class="read_more">See on Github</a></br>
+    <div class="cards">
+        <div class="card card1">
+            <div class="container_card">
+                <img src="/staticfiles/images/projectweb.gif" alt="Personal web page">
+            </div>
+            <div class="details">
+                <h4>Personal web page</h4>
+                <p>You are already here! This is my first web application hope you enjoy!</p>
+                <p>If you wanna know what on what I am working now check my blog.</p>
+                <h3>Technology used:</h3>
+                <ul>
+                    <li>Python (Django)</li>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>SQLite</li>
+                </ul>
+                <div class="github-button">
+                    <a href="#">See code on GitHub</a>
                 </div>
             </div>
-            <div class="card">
-                <div class="card_img">
-                    <img src="/staticfiles/images/project123.gif" alt="project-2">
-                </div>
-                <div class="card_body">
-                    <h2 class="card_title">Space Catalog</h2>
-                    <p>Space catalog is a GUI application to browse and learn about space. You can read about our solar system, browse nasa daily photo by just choosing a date and a lot more.</p>
-                    <h6>Technologies:</h6>
-                    <ul>
-                        <li>Python</li>
-                        <li>Tkinter</li>
-                        <li>NASA API</li>
-                    </ul>
-                    <a href="https://github.com/DEENUU1/Space-catalog" class="read_more">See on Github</a>
+        </div>
+        <div class="card card2">
+            <div class="container_card">
+                <img src="/staticfiles/images/project123.gif" alt="Cosmos catalog">
+            </div>
+            <div class="details">
+                <h4>Space Catalog</h4>
+                <p>Space catalog is a GUI application to browse and learn about space.</p>
+                <p>You can read about our solar system, browse nasa daily photo by just choosing a date and a lot more.</p>
+                <h3>Technology used:</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Tkinter</li>
+                    <li>Nasa API</li>
+                </ul>
+                <div class="github-button">
+                    <a href="#">See code on GitHub</a>
                 </div>
             </div>
-            <div class="card">
-                <div class="card_img">
-                    <img src="/staticfiles/images/project2.gif" alt="project-3">
-                </div>
-                <div class="card_body">
-                    <h2 class="card_title">Nasa Apod</h2>
-                    <p>If you love space images. You have to get this application. You can browse NASA image, choose date, read about it and automatically download image on your computer.</p>
-                    <h6>Technologies:</h6>
-                    <ul>
-                        <li>Python</li>
-                        <li>Tkinter</li>
-                        <li>NASA API</li>
-                    </ul>
-                    <a href="https://github.com/DEENUU1/Nasa-Apod" class="read_more">See on Github</a>
+        </div>
+        <div class="card card3">
+            <div class="container_card">
+                <img src="/staticfiles/images/project2.gif" alt="Nasa apod">
+            </div>
+            <div class="details">
+                <h4>NASA APOD</h4>
+                <p>NASA APOD is a GUI application to browse and download NASA picture of a day, you just need to choose date and enjoy views.</p>
+                <h3>Technology used:</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Tkinter</li>
+                    <li>Nasa API</li>
+                </ul>
+                <div class="github-button">
+                    <a href="#">See code on GitHub</a>
                 </div>
             </div>
         </div>
     </div>
   </section>
 
+<!--END OF PROJECT SECTION-->
+
+
+<!--CONTACT SECTION-->
+
   <section id="contact" class="contact container">
     <div class="contact-info">
-      <h1 class="contact-info-heading">Contact</h1>
+        <h1 class="contact-info-heading">Contact</h1>
     </div>
 
-  <form action="/contact-form/" method="post">
-      {% csrf_token %}
-          <input name="email" type="text" class="feedback-input" placeholder="E-mail" />
-          <input name="subject" type="text" class="feedback-input" placeholder="Subject" />
-          <textarea  name="text" class="feedback-input" placeholder="Message"></textarea>
-          <input type="submit" value="SUBMIT"/>
-  </form>
-
-
-
+      <form action="/contact-form/" method="post">
+          {% csrf_token %}
+              <input name="email" type="text" class="feedback-input" placeholder="E-mail" />
+              <input name="subject" type="text" class="feedback-input" placeholder="Subject" />
+              <textarea  name="text" class="feedback-input" placeholder="Message"></textarea>
+              <input type="submit" value="SUBMIT"/>
+      </form>
   </section>
 
-  <!-- Footer section  -->
+<!--END OF CONTACT SECTION-->
+
+
+<!--FOOTER SECTION-->
+
   <footer id="footer" class="footer container">
     <div class="footer-contact">
       <h1 class="footer-contact-heading">Check my social media</h1>
@@ -171,8 +193,15 @@
       </div>
     </div>
   </footer>
-  <!-- End Footer section  -->
+
+<!--END OF FOOTER SECTION-->
+
+<!--HAMBURGER SCRIPT-->
+
   <script src="{%static '/css/app.js'%}"></script>
+
+<!--END OF HAMBURGER SCRIPT-->
+
 </main>
 </body>
 </html>

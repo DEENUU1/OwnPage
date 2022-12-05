@@ -3,6 +3,9 @@
 <html lang="pl-PL">
 <head>
   <meta charset="UTF-8">
+  <meta name="keywords" content="Kacper Włodarczyk, Kacper, Włodarczyk, Programming, Python, Programowanie, HTML5, HTML, CSS, portfolio, Blog, Moje życie, Moje, Życie, My life, My, Life">
+  <meta name="description" content="Kacper Włodarczyk personal portfolio, projects, and blog. I created Space Catalog and Nasa Apod. Kacper Włodarczyk, moja osobity strona internetowa, zawiera moje projekty oraz personalego bloga. Stworzyłem Space Catalog oraz Nasa Apod.">
+  <meta name="author" content="Kacper Włodarczyk">
   <meta name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <title>Blog | Kacper Włodarczyk</title>
@@ -11,53 +14,81 @@
 </head>
 <body>
 
-  <section id="nav-bar" class="container-nav">
+
+<!--NAVIGATION BAR-->
+
+<div class="navigation-bar">
+  <section id="nav-bar" class="container">
     <header class="nav-bar">
-      <div class="brand"><a href="/base/"><h1>Kacper Włodarczyk</h1></a></div>
+      <div class="brand"><a href="#">Kacper Włodarczyk</a></div>
       <div class="nav-list">
         <div class="hamburger">
           <div class="bar"></div>
         </div>
         <ul>
-          <li><a href="#">Blog</a></li>
+          <li><a href="/blog/">Blog</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#footer">Contact</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+      </div>
     </header>
   </section>
+</div>
 
+<!--END OF NAVIGATION BAR-->
 
 <main>
-    <div class="container">
-        <div class="row">
-            <div class="heading-section">
-                <h1>BLOG</h1>
-                <p>Witaj na moim blogu, znajdziesz tu moje cotygodniowe
-                raporty z mojej nauki programowania</p>
+
+<!--BLOG'S HEADING-->
+<section id="blog" class="blog container">
+    <div class="blog-info">
+      <h1 class="blog-info-heading">BLOG</h1>
+      <p class="blog-info-desc">Welcome on my blog, here you can read about my coding adventure</p>
+      <p class="blog-info-desc">But not only, additionally you can see what books I am reading, what movies I am watching and a lot more.</p>
+      <div class="button-one">
+      <div class="top-article-button">
+          <a href="/blog/article/8">BOOKS</a>
+          <a href="#">MOVIES</a>
+          <a href="#">2022</a>
+          <a href="#">NOVEMBER</a>
+      </div>
+      </div>
+      <hr/>
+    </div>
+
+<!--END OF BLOG'S HEADING-->
+
+<!--ARTICLES SECTION-->
+
+    {% for post in object_list %}
+    <div class="cards">
+        <div class="card card1">
+            <div class="container_card">
+                <img src="{{post.image.url}}">
             </div>
+            <div class="details">
+                <h4>{{post.title}}</h4>
+                <small>Data: {{post.create_date}}</small>
+                <br><small>Czas czytania: {{post.time_reading}}</small>
+                <p>{{post.body_short}}</p>
 
-
-            <div class="content-section">
-
-                <div class="card">
-                    {% for post in object_list %}
-                    <h2>{{post.title}}</h2>
-                    <small>Data: {{post.create_date}} Autor: {{post.author}}</small>
-                    <p>{{post.body_short}}<br><a href="{% url 'article-detail' post.pk %}"> Czytaj cały wpis...</a></p>
-                    <img src="{{post.image.url}}">
-                    <p id="reading-time">Czas czytania: {{post.time_reading}}</p></br></br></br></br>
-
-                    {% endfor %}
+                <div class="button">
+                <div class="article-button">
+                    <a href="{% url 'article-detail' post.pk %}">Read full article</a>
+                </div>
                 </div>
             </div>
         </div>
     </div>
+    {% endfor %}
+  </section>
 
+<!--END OF ARTICLES SECTION-->
 
+<!--FOOTER SECTION-->
 
-
-    <footer id="footer" class="footer container">
+  <footer id="footer" class="footer container">
     <div class="footer-contact">
       <h1 class="footer-contact-heading">Check my social media</h1>
       <p class="footer-contact-info">Email: kacperwlodarczyk@protonmail.com</p>
@@ -71,7 +102,14 @@
     </div>
   </footer>
 
+<!--END OF FOOTER SECTION-->
+
+<!--HAMBURGER SCRIPT-->
+
   <script src="{%static '/css/app.js'%}"></script>
+
+<!--END OF HAMBURGER SCRIPT-->
+
 </main>
 </body>
 </html>

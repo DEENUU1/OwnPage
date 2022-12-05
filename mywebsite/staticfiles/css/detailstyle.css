@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
-
-
 *{
     margin: 0px;
     padding: 0px;
@@ -15,6 +13,14 @@ html {
 	scroll-behavior: smooth;
 	font-family: 'Montserrat';
 	font-size: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    html,
+    body{
+    width:100%;
+    overflow-x:hidden;
+    }
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -38,6 +44,10 @@ html {
     border: 3px none #ffffff;
   }
 
+/* ===== END OF Scrollbar CSS ===== */
+
+/* ===== CONTAINER TEMPLATE ===== */
+
 .container {
 	width: 100%;
 	height: auto;
@@ -45,15 +55,10 @@ html {
 	align-items: center;
 	justify-content: center;
 }
-/* Nav Bar  */
 
-.container-nav {
-	width: 100%;
-	height: auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+/* ===== END OF CONTAINER TEMPLATE ===== */
+
+/* ===== NAVIGATION BAR ===== */
 
 #nav-bar {
 	height: auto;
@@ -70,7 +75,7 @@ html {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .nav-bar .brand a {
@@ -80,9 +85,6 @@ html {
     color: white;
 
 }
-
-
-
 
 .nav-bar .nav-list {
 	display: flex;
@@ -180,12 +182,33 @@ html {
 .nav-bar .nav-list.open ul {
 	transform: translateY(90px);
 }
-/* End Nav Bar */
+
+/* Media query for desktop and tab  */
+@media only screen and (min-width: 768px) {
+	.nav-bar .nav-list .hamburger {
+		display: none;
+	}
+	.nav-bar {
+		width: 100%;
+	}
+	.nav-bar .nav-list ul {
+		transform: translateX(0);
+		position: initial;
+		padding: 0;
+		z-index: initial;
+		background-color: transparent;
+	}
+	.nav-bar .nav-list ul li {
+		display: inline-block;
+	}
+}
+
+/* ===== END OF NAVIGATION BAR ===== */
 
 
 
+/* ===== ARTICLE SECTION ===== */
 
-/* Main blog content  */
 .content-section{
     min-height: 100vh;
     padding-top: 100px;
@@ -231,8 +254,6 @@ html {
     font-size: 25px;
     text-align: center;
 }
-
-
 
 .content-section .card ol li{
     color: white;
@@ -302,17 +323,23 @@ html {
     text-align:center;
 }
 
+@media screen and (min-width: 768px){
+    .content-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    min-height: 100vh;
+    }
+}
 
 
+/* ===== END OF ARTICLE SECTION ===== */
 
+/* ===== FOOTER SECTION ===== */
 
-
-
-
-
-
-/* Footer section  */
 .footer {
+    position: relative;
 	min-height: 20vh;
 	width: 100%;
 	background-color: #181a1b;
@@ -344,63 +371,10 @@ html {
 }
 
 .footer .footer-social-follow .footer-social-icon a:hover {
-    color: orange;
+    color: #FF7825;
 
 }
 
+/* ===== END OF FOOTER SECTION ===== */
 
 
-
-
-
-
-@media screen and (min-width: 768px){
-    .content-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    min-height: 100vh;
-    }
-}
-
-
-/* Media query for desktop and tab  */
-@media only screen and (min-width: 768px) {
-	.nav-bar .nav-list .hamburger {
-		display: none;
-	}
-	.nav-bar {
-		width: 100%;
-	}
-	.nav-bar .nav-list ul {
-		transform: translateX(0);
-		position: initial;
-		padding: 0;
-		z-index: initial;
-		background-color: transparent;
-	}
-	.nav-bar .nav-list ul li {
-		display: inline-block;
-	}
-}
-/* End Media query for desktop and tab  */
-
-/* Media Query For Desktop Only  */
-@media only screen and (min-width: 1200px) {
-	.hero .hero-info .hero-info-heading {
-		font-size: 6rem;
-	}
-}
-
-@media only screen and (max-width: 768px) {
-    html,
-    body{
-    width:100%;
-    overflow-x:hidden;
-    }
-}
-
-
-
-/* End Media Query For Desktop Only  */
