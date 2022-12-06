@@ -6,4 +6,4 @@ DJANGO
 
 
 
-<img src="ezgif.com-gif-maker.gif"/>
+<img src="demo.gif"/>
