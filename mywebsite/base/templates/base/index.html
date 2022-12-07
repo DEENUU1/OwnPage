@@ -165,13 +165,14 @@
     <div class="contact-info">
         <h1 class="contact-info-heading">Contact</h1>
     </div>
-
-      <form action="/contact-form/" method="post">
-          {% csrf_token %}
+      
+      <form class="" method="post" >
+      {% csrf_token %}
               <input name="email" type="text" class="feedback-input" placeholder="E-mail" />
               <input name="subject" type="text" class="feedback-input" placeholder="Subject" />
               <textarea  name="text" class="feedback-input" placeholder="Message"></textarea>
               <input type="submit" value="SUBMIT"/>
+
       </form>
   </section>
 
