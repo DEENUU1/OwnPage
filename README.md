@@ -42,9 +42,6 @@ If u are a beginner like me I recommend you to use 'pythonanywhere' It's 100% fr
 
 it depends. I made a full configuration for a custom ERROR 404 PAGE but it doesn't work with the static file.
 
-### Admin panel 
-
-It works on localhost but not on the hosting. I gonna repair that in my free time.
 
 
 ## Authors
