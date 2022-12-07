@@ -5,6 +5,8 @@ Here you can download all files and customise them for your self. In the link do
 this project.
 Also down below I will tell you everything about configuration. 
 
+<img src="demo.gif"/>
+
 
 ## Demo
 
