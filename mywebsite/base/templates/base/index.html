@@ -167,11 +167,13 @@
     </div>
       
       <form class="" method="post" >
+
       {% csrf_token %}
               <input name="email" type="text" class="feedback-input" placeholder="E-mail" required />
               <input name="subject" type="text" class="feedback-input" placeholder="Subject" required />
               <textarea  name="text" class="feedback-input" placeholder="Message" required></textarea>
               <input type="submit" value="SUBMIT"/>
+
 
       </form>
   </section>
@@ -200,6 +202,7 @@
 <!--HAMBURGER SCRIPT-->
 
   <script src="{%static '/css/app.js'%}"></script>
+
 
 <!--END OF HAMBURGER SCRIPT-->
 

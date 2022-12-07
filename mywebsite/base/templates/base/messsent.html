@@ -1,0 +1,82 @@
+{% load static %}
+
+<html lang="pl-PL">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="Kacper Włodarczyk, Kacper, Włodarczyk, Programming, Python, Programowanie, HTML5, HTML, CSS, portfolio,Blog, Moje życie, Moje, Życie, My life, My, Life">
+  <meta name="description" content="Kacper Włodarczyk personal portfolio, projects, and blog. I created Space Catalog and Nasa Apod. Kacper Włodarczyk, moja osobity strona internetowa, zawiera moje projekty oraz personalego bloga. Stworzyłem Space Catalog oraz Nasa Apod.">
+  <meta name="author" content="Kacper Włodarczyk">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kacper Włodarczyk</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="{% static '/css/messsent.css' %}">
+</head>
+<body>
+
+<!--NAVIGATION BAR-->
+
+<div class="navigation-bar">
+  <section id="nav-bar" class="container">
+    <header class="nav-bar">
+      <div class="brand"><a href="#">Kacper Włodarczyk</a></div>
+      <div class="nav-list">
+        <div class="hamburger">
+          <div class="bar"></div>
+        </div>
+        <ul>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+  </section>
+</div>
+
+<!--END OF NAVIGATION BAR-->
+
+<!--FIRST SECTION-->
+
+  <section id="hero" class="hero container">
+    <div class="hero-info">
+      <h1 class="hero-info-heading">YOUR MESSAGE HAS BEEN SENT!</h1>
+        <div class="contact-button">
+          <a href="/">BACK TO THE MAIN PAGE</a>
+        </div>
+    </div>
+  </section>
+
+<!--END OF FIRST SECTION-->
+
+
+
+<!--FOOTER SECTION-->
+
+  <footer id="footer" class="footer container">
+    <div class="footer-contact">
+      <h1 class="footer-contact-heading">Check my social media</h1>
+      <p class="footer-contact-info">Email: kacperwlodarczyk@protonmail.com</p>
+    </div>
+    <div class="footer-social-follow">
+      <div class="footer-social-icon">
+        <a href="https://twitter.com/Kacper95682155"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/DEENUU1"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/kacper-w%C5%82odarczyk-449b62254/"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+<!--END OF FOOTER SECTION-->
+
+<!--HAMBURGER SCRIPT-->
+
+  <script src="{%static '/css/app.js'%}"></script>
+
+
+<!--END OF HAMBURGER SCRIPT-->
+
+</main>
+</body>
+</html>
