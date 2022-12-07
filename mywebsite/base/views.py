@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from .models import Contact
-from django.http import HttpResponse
-from django.contrib import messages
+
 def home(request):
     if request.method=="POST":
         contact = Contact()
@@ -18,6 +17,7 @@ def home(request):
         return render(request, 'base/messsent.html')
 
     return render(request, 'base/index.html')
+
 
 def error_404(request, exception):
     return render(request, 'base/404.html')
