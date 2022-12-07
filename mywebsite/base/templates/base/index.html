@@ -168,9 +168,9 @@
       
       <form class="" method="post" >
       {% csrf_token %}
-              <input name="email" type="text" class="feedback-input" placeholder="E-mail" />
-              <input name="subject" type="text" class="feedback-input" placeholder="Subject" />
-              <textarea  name="text" class="feedback-input" placeholder="Message"></textarea>
+              <input name="email" type="text" class="feedback-input" placeholder="E-mail" required />
+              <input name="subject" type="text" class="feedback-input" placeholder="Subject" required />
+              <textarea  name="text" class="feedback-input" placeholder="Message" required></textarea>
               <input type="submit" value="SUBMIT"/>
 
       </form>

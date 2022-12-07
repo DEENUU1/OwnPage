@@ -593,6 +593,17 @@ textarea {
 
 [type="submit"]:hover { background:grey; }
 
+
+input:required:focus {
+    border: 5px solid red;
+    outline: none;
+}
+
+textarea:required:focus{
+    border: 5px solid red;
+    outline: none;
+}
+
 /* ===== END OF CONTACT SECTION ===== */
 
 /* ===== FOOTER SECTION ===== */
