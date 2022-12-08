@@ -12,6 +12,12 @@ Also down below I will tell you everything about configuration.
 
 http://deenuu1.pythonanywhere.com/
 
+## Technology used:
+- Python (Django)
+- HTML
+- CSS
+- SQLite
+- JavaScript
 
 ## Documentation
 
